@@ -1,55 +1,40 @@
-// Arrays
-const myArray = [1, 2, 3, 4, 5];
-const myHeros = ["Iron Man", "Spider Man", "Thor", "Hulk"];
-console.log(myArray[0]); // Accessing the first element of the array
-console.log(myArray.length); // Getting the length of the array
-console.log(myHeros[0]); // Accessing the first element of the array
-console.log(myHeros.length); // Getting the length of the array
+const marvel_heros = ["Iron Man", "Captain America", "Thor", "Hawkeye"];
+const dc_heros = ["Batman", "Superman", "Wonder Woman", "Cyborg"];
+
+marvel_heros.push(dc_heros); // Adding the dc_heros array as a single element to the marvel_heros array
+console.log();
+
+// console.log(marvel_heros);
+// console.log(marvel_heros[4][0]);
 
 
-// Adding elements to the array
-myArray.push(6);
-myArray.push(7);
-myArray.unshift(90); // Adds an element to the beginning of the array
-// myArray.shift(); // Removes the first element from the array
-console.log(myArray);
-console.log(myArray.includes(7));
-console.log(myArray.indexOf(4)); // Returns the index of the element in the array
-
-
-myArray.pop(); // Removes the last element from the array
+console.log(marvel_heros.length); // Length of the marvel_heros array after adding dc_heros
 console.log();
 console.log();
 
-
-myHeros.push("Captain America");
-console.log(myArray);
-console.log(myHeros);
-
-console.log();
-console.log();
-
-const newArray = myArray.join();
-console.log(myArray);
-console.log(newArray);
-console.log(typeof myArray);
-console.log(typeof newArray);
-
+const combined_heros = marvel_heros.concat(dc_heros); // Combining both arrays into a new array
+console.log(combined_heros);
+console.log(combined_heros.length); // Length of the combined array
 console.log();
 console.log();
 console.log();
 console.log();
 
-// SLICE, SPLICE;
+// SPREAD OPERATOR
+const combined_heros2 = [...marvel_heros, ...dc_heros]; // Using the spread operator to combine both arrays into a new array
+console.log(combined_heros2);
+// console.log(combined_heros2.length); // Length of the combined array using spread operator
 
-console.log("A" , myArray);
+const anptherArray = [1, 2, 3, [4 , 5, 6], 7, 8];
+const flatArray = anptherArray.flat(1); // Flattening the nested array into a single-level array
+console.log(flatArray);
 
-const myNewArray = myArray.slice(1, 4); // Returns a new array with the elements from index 1 to 3
-console.log(myNewArray);
-console.log("B" , myArray);
+console.log(Array.isArray("Shubham"));
+console.log(Array.from("Shubham"));
+console.log(Array.from({name: "Shubham"})); // INTERESTING
 
-console.log();
-console.log();
-const myNewArray2 = myArray.splice(1, 4); // Removes elements from index 1 to 4 and returns them as a new array
-console.log(myNewArray2);
-console.log("C" , myArray);
+
+let score1=100
+let score2=200
+let score3=300
+console.log(Array.of(score1, score2, score3)); // Creating an array from the given scores
