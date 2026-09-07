@@ -56,3 +56,15 @@ console.log(Object.values(tinder));
 console.log(Object.entries(tinder));
 
 console.log(tinder.hasOwnProperty("location")); // Checking if the 'tinder' object has a property named 'Location'
+
+const course = {
+    courseName : "JavaScript",
+    coursePrice : 999,
+    courseInstructor : "Shubham",
+}
+// course.courseInstructor
+console.log();
+console.log();
+console.log();
+const {courseInstructor} = course; // Destructuring the 'course' object to extract the 'courseInstructor' property
+console.log(courseInstructor);
