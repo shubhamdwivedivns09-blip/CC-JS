@@ -1,2 +1,2 @@
 # CC-JS
-A code repo for java script Series.
+Learn. Practice. Build. Master JavaScript.
