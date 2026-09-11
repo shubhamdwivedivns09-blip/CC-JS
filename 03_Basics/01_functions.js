@@ -55,7 +55,9 @@ function handleObject(anyUser){
     
 }
 
-handleObject(user); // Calling the handleObject function with the 'user' object as an argument to log the username and price properties of the user object  
+handleObject(user); // Calling the handleObject 
+// function with the 'user' object as an argument to log the 
+// username and price properties of the user object  
 
 handleObject({
     username : "John",
@@ -71,3 +73,15 @@ function returnSeconValue(getArray){
 
 // console.log(returnSeconValue(mynewArray));
 console.log(returnSeconValue([1,2,3,4,5,6,7,8,9])); // Calling the returnSeconValue function with an array and logging the returned second value to the console
+
+const user1 = {
+    username : "Shubham",
+    price : 100,
+
+}
+const newuser = {
+    ...user1, // Using the spread operator to copy all properties from the 'user1' object into the 'newuser' object
+    age : 20, // Adding a new property 'age' with a value of 20 to the 'newuser' object
+
+}
+console.log(newuser); // Logging the 'newuser' object to the console, which now contains all properties from 'user1' and the new 'age' property

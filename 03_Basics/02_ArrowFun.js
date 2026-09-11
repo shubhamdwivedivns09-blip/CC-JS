@@ -3,7 +3,9 @@ const user = {
     price: 999,
 
     welcomeMassage: function(){
-        console.log(`${this.username} , Welcom to Website`);
+        console.log(`${this.username} , Welcom to Website`);// ***this in JavaScript is used to 
+        //refer to the object/context that a function is working with.****
+        
        // console.log(this);
         
     }

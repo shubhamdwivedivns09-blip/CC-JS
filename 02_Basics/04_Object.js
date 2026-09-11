@@ -66,5 +66,17 @@ const course = {
 console.log();
 console.log();
 console.log();
-const {courseInstructor} = course; // Destructuring the 'course' object to extract the 'courseInstructor' property
-console.log(courseInstructor);
+const {courseInstructor : instructor} = course; // Destructuring the 'course' object to extract the 'courseInstructor' property
+console.log(instructor); // Logging the value of the 'instructor' variable, which holds the value of 'courseInstructor' from the 'course' object \
+
+// {
+//     "name" : "Shubham",
+//     "course" : "JavaScript",
+//     "price" : "free",
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
